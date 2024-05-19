@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-wiki</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div>
+    <header>
+        <h1>D-wiki</h1>
+        <div>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter search term" />
+                <button type="submit">Search</button>
+              </form>
+        </div>
+       
+        </header>
+   
+        <nav>
+            <ul>
+               <li class="Home"><a href="user_profile.html">Profile</a></li>
+                <li><a href="article.html">Trending</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tokenz.html">Tokenz</a></li>
+             </ul>
+             
+        </div>
+           </nav>
+           <div class="user-actions">
+            <button onclick="location.href='user.html'">Log In</button>
+            <button onclick="location.href='register.html'">Register</button>
+        </div>
+</div>
+<div>
+    <main id="content">
+        <h2>Welcome to D-wiki</h2>
+        <p>It is a decentralized platform</p>
+    </main>
+    <div id="search-results"></div>
+</div>
+   
+    <footer>
+        <p>&copy; 2024 Simple Wikipedia Clone. All rights reserved.</p>
+    </footer>
+    <script src="home.js"></script>
+
+</body>
+</html>

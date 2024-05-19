@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Decentralized Wiki</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-container">
+        <header class="header">
+            <h1>Register</h1>
+        </header>
+        <section class="content">
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="button" id="sendEmailOtp">Send Email OTP</button>
+                    <input type="text" id="emailOtp" name="emailOtp" placeholder="Enter Email OTP" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <button type="button" id="sendPhoneOtp">Send Phone OTP</button>
+                    <input type="text" id="phoneOtp" name="phoneOtp" placeholder="Enter Phone OTP" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Register</button>
+                <div id="successMessage" class="success-message"></div>
+            </form>
+        </section>
+    </div>
+   
+    <script src="register.js"></script>
+</body>
+</html>
